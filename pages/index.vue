@@ -18,73 +18,90 @@
             </v-row>
         </v-carousel-item>
       </v-carousel>
+
+      <section id ="apply-all">
+        <h2> Learn More about Otters !!! </h2>
+      </section>
+
+
+
     
-      
-    <v-col class="fill-height" align="center" justify="center">
-      <v-flex>
-        <h2 > Learn More about Otters !!! </h2>
-      </v-flex>
-       
-      <v-layout row justify-space-between>
+      <section id="tests" > 
+        <v-col style="padding-top: 39px;" class="fill-height" align="center" justify="center">
+          <v-flex >
+            <h1 style="font-size: 33px;">TESTS:</h1>
+            <h3> You can get to know more with our various test about otter life like:</h3>
+          </v-flex>
 
-            <v-flex>
-
-              
-              <v-card class="justify-center" > Etymology</v-card>
-              <v-card class="justify-center" > Life Cycle</v-card>
-              <v-card class="justify-center" > Description</v-card>
-              
+          <v-layout row justify-space-around >
+            <v-flex xs5 v-for="(card,i) in cards1"  :key="i">
+              <br> 
+              <v-card  style="padding-top: 12px;max-width: 470px;">
+                <span> <v-icon>{{card.fav}}</v-icon>                           </span>
+                <span> <v-card-text>{{card.title}}</v-card-text>
+                           </span>
+                              </v-card>
             </v-flex>
-
-            <v-flex>
-
-              
-              <v-card class="justify-center" > Feeding</v-card>
-              <v-card class="justify-center" > Terminology</v-card>
-              <v-card class="justify-center" > Species</v-card>
-              
-            </v-flex>
-
           </v-layout>
-    </v-col>  
+        </v-col>  
+      </section>
 
 
 
-    
+    <v-img src="/otter-hand2.jpg" id="about" >
 
+      <v-layout row justify-space-around  style="height:100%">
+        <v-flex class="translucid">
+           <v-flex >
+            <v-card-text><h1 style="font-size: 33px;">ABOUT US:</h1></v-card-text>
+            <v-card-text><h3> There has been plenty of research relating to Otters over the years. As a result we do know quite a bit about these animals. We do know that they have been around for millions of years. They were once creatures that were only on land but then they adapted to a life that allows them to be in the water as well. We know that they are meat eaters and that they aren’t very picky when it comes to the prey they find.</h3></v-card-text>
+          </v-flex>
 
-
-
+          <!-- <v-card >
+                  <v-card-text>card.title</v-card-text>
+          </v-card> -->
+      </v-flex>
         
-        
-        
+
+      </v-layout>  
+    </v-img>
 
 
 
-    <v-img src="/otter-hand.jpg"></v-img>
-    <v-img src="/otter-hand.jpg" width="100%" position="absolute"  ></v-img>
-    <v-img src="/otter-hand.jpg" width="100%" position="absolute"  ></v-img>
+<v-container id="contact">
+  <v-flex>
 
+  <formate></formate>
+  </v-flex>
+</v-container>
 
-  
+   
   </v-layout>
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
-// import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import formate from '~/components/formate.vue'
 
 export default {
-  // components: {
-  //   Logo,
-  //   VuetifyLogo
-  // },   
+  components: {
+    formate
+  },  
   data () {
       return {
         slides: [
           "/sup.jpg",
           "/otters-group.jpg",
           "/sea-otter-wild.jpg",
+        ],
+        cards1: [
+          {title: "Etymology", fav:"launch"},
+          {title: "Feeding", fav:"fastfood"},
+          {title: "Life Cycle", fav:"favorite"},
+          {title: "Description", fav:"list"},
+          {title: "Species", fav:"opacity"},
+          {title: "Habitat", fav:"home"},
+          {title: "Terminology", fav:"fingerprint"},
+          {title: "Fun facts", fav:"grade"},
         ],
       }
   }
@@ -93,9 +110,45 @@ export default {
 
 
 <style>
- #text-section-gn{
+ #apply-all{
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-top: 25px; 
  }
+
+ #about{
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+
+
+ #tests{
+   height:630px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 100%;
+   background-color:#4E453C;
+ }
+
+ h2{
+    font-style: oblique;
+    font-size: xxx-large;
+    color: #f5f5f5;
+}
+
+.translucid{
+  background-color: #fbc15d;
+  opacity: 0.5;
+  padding-left: 12px;
+padding-right: 12px;
+padding-top: 44px;
+}
+
+.my-span {
+  /* background-color: blue; */
+  color: black;
+  font-weight: bold;
+  margin-right: 0;
+  float: right;
+}
+
 </style>
