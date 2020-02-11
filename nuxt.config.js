@@ -1,7 +1,7 @@
-const colors = require('vuetify/es5/util/colors').default
+import colors from 'vuetify/es5/util/colors'
 
-module.exports = {
-  mode: 'spa',
+export default {
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -35,7 +35,9 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/vuetify',
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Nuxt.js modules
@@ -63,8 +65,6 @@ module.exports = {
       }
     }
   },
-  srcDir: 'src',
-  buildDir:'functions/.nuxt',
   /*
   ** Build configuration
   */
@@ -72,7 +72,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extractCSS: true,
     extend (config, ctx) {
     }
   }
