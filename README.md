@@ -1,6 +1,6 @@
 # Otterpedia-thirdtrial(v3)
 
-> My gnarly Nuxt.js project
+> This is a dummy Website for learning purpouses
 
 ## Preview
 ![WebPreview-GIF](/static/otterpedia.gif)
