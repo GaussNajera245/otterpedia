@@ -122,7 +122,7 @@ export default {
 <style >
 form {
   height: 500px;
-
+  padding: 12px;
   padding-top: 51px;
 }
 </style>

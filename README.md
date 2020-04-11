@@ -1,6 +1,9 @@
-# thirdtrial
+# Otterpedia-thirdtrial(v3)
 
 > My gnarly Nuxt.js project
+
+## Preview
+![WebPreview-GIF](/static/otterpedia.gif)
 
 ## Build Setup
 

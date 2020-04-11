@@ -2,7 +2,7 @@
   <v-layout column justify-center align-center>
     <v-carousel
       cycle
-      heigh="500px"
+      height="470px"
       hide-delimiter-background
       :show-arrows="false"
       delimiter-icon="mdi-minus"
@@ -65,10 +65,6 @@
               <h3>There has been plenty of research relating to Otters over the years. As a result we do know quite a bit about these animals. We do know that they have been around for millions of years. They were once creatures that were only on land but then they adapted to a life that allows them to be in the water as well. We know that they are meat eaters and that they aren’t very picky when it comes to the prey they find.</h3>
             </v-card-text>
           </v-flex>
-
-          <!-- <v-card >
-                  <v-card-text>card.title</v-card-text>
-          </v-card>-->
         </v-flex>
       </v-layout>
     </v-img>
@@ -78,27 +74,6 @@
         <formate />
       </v-flex>
     </v-container>
-
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js" />
-
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js" />
-    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js" />
-
-    <script>
-      var firebaseConfig = {
-      apiKey: "AIzaSyAsa3j2THc96goiErCw1ktV7SzTl4qk_uc",
-      authDomain: "otterpedia-26601.firebaseapp.com",
-      databaseURL: "https://otterpedia-26601.firebaseio.com",
-      projectId: "otterpedia-26601",
-      storageBucket: "otterpedia-26601.appspot.com",
-      messagingSenderId: "334710615994",
-      appId: "1:334710615994:web:afc3e1df9656176c6a3783",
-      measurementId: "G-LTTP24LD8S"
-      };
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
   </v-layout>
 </template>
 
@@ -150,6 +125,7 @@ h2 {
   font-style: oblique;
   font-size: xxx-large;
   color: #f5f5f5;
+  text-align: center;
 }
 
 .translucid {
